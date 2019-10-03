@@ -1,0 +1,6 @@
+enum (Cam) {
+  description (camera options)
+  symbol (FHAZ)
+  symbol (RHAZ)
+  symbol (MAST)
+}
