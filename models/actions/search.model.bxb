@@ -1,0 +1,17 @@
+action (search) {
+  type(Search)
+  description (chooses camera or date)
+  collect {
+    input (day) {
+      type (Day)
+      min (Optional) max (One)
+    }
+ input (cam) {
+      type (Cam)
+      min (Optional) max (One)
+    }  
+     
+  }
+
+  output (Mars)
+}
