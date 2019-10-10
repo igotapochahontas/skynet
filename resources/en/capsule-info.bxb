@@ -1,0 +1,8 @@
+capsule-info {
+  display-name (Curiouser and Curiouser)
+  developer-name (skynet)
+  icon-asset (butt.png)
+  description ("booty booty")
+  website-url (https://github.com/igotapochahontas)
+  terms-url (https://example.com/terms-of-use/)
+}

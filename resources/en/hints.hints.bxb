@@ -1,0 +1,8 @@
+hints {
+  uncategorized {
+    utterance (Mars)
+    utterance (show me a mars photo)
+    utterance (find a mars photo from )
+
+  }
+}

@@ -1,0 +1,14 @@
+layout {
+  match: Mars (this)
+  mode (Summary)
+
+  content {
+    section {
+      content {
+        image {
+          url ("#{value(this.imgUrl)}")
+        }
+      }
+    }
+  }
+}

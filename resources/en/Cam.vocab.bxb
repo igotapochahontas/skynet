@@ -1,0 +1,4 @@
+vocab (Category){
+"FHAZ" {"front" "fhaz" "front hazard"}
+"RHAZ" {"rear" "back" "back hazard" "rear hazard"}
+}

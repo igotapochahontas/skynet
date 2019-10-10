@@ -1,0 +1,11 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (search) {
+      accepted-inputs (day,cam)
+      local-endpoint ("search.js")
+    }
+
+   
+    }
+  }
+

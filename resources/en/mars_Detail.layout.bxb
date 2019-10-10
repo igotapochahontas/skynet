@@ -1,0 +1,24 @@
+layout {
+  match: Mars (this)
+  mode (Details)
+
+  content {
+    section {
+      content {
+        image {
+          url ("#{value(this.imgUrl)}")
+          object-fit (Contain)
+        }
+
+         paragraph {
+          value ("[by #{value(this.cam)}]")
+          style (Label_M_Soft)
+        }
+        paragraph {
+          value ("[origin #{value(this.pageUrl)}]")
+          style (Label_M_Soft)
+        }
+      }
+    }
+  }
+}
