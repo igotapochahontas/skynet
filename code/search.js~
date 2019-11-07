@@ -1,18 +1,17 @@
 var http = require("http")
 var console = require("console")
-module.exports.function = function search (keyword, category, author) {
-  var url = "http://www.perfectcartoon.com/site/search"
+module.exports.function = function search (day, cam) {
+  var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?"
+var urlFull= "earth_date=2015-6-3&api_key=DEMO_KEY"
   var options = {}
   var ret = []
-  if (typeof(keyword)!= "undefined"){
-    options["keyword"]= keyword
+  if (typeof(day)!= "undefined"){
+    options["day"]= day
   }
-  if (typeof(category)!= "undefined"){
-    options["category"]= category
+  if (typeof(cam)!= "undefined"){
+    options["cam"]= cam
   }
-  if (typeof(author)!= "undefined"){
-    options["author"]= author
-  }
+  
   try{
   res = http.getUrl(url,{query: options})
   ret = JSON.parse(res)

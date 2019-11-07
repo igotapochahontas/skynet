@@ -3,13 +3,18 @@ var console = require("console")
 module.exports.function = function search (day, cam) {
   var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?"
 var urlFull= "earth_date=2015-6-3&api_key=DEMO_KEY"
-  var options = {}
+  var options = { 
+    query: {
+      day: day
+      cam: cam
+    }
+  };
   var ret = []
   if (typeof(day)!= "undefined"){
-    options["day"]= day
-  }
+    options.query.day= day
+  };
   if (typeof(cam)!= "undefined"){
-    options["cam"]= cam
+    options.cam"= cam
   }
   
   try{
